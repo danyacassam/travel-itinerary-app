@@ -10,9 +10,10 @@
     <title>AI Travel Itinerary Generator</title>
 </head>
 <body>
+    <div class="background-image"></div>
     <div class="container">
     <header>
-        <h1>AI Travel Itinerary Generator</h1>
+        <h1>AI Travel Guide Generator</h1>
     </header>
 
     <main>
@@ -20,16 +21,17 @@
             <form id="poem-generator">
                 <input 
                     type="text" 
-                    placeholder="Enter a country or city" 
+                    placeholder="Let’s plan your trip! Where to?" 
                     autofocus 
                     required 
                     autocomplete="off" 
                     class="instructions"
                     id="user-instructions"
+                    oninput="capitalizeFirstLetter()"
                />
                 <input type="submit" name="Submit" class="submit-button"/>
             </form>
-            <div class="hint">i.e: Portugal, Paris or Lisbon</div>
+            <div class="hint">i.e: Lisbon, Rome, Vienna or New York</div>
         </div>
         <div class="poem hidden" id="poem"></div>
     </main>

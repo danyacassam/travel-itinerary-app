@@ -7,6 +7,19 @@ a{
     color: rgb(16, 112, 112);
 }
 
+.background-image{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://s3.amazonaws.com/shecodesio-production/uploads/files/000/162/609/original/IMG_3709.JPG?1744192671');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.4;
+    z-index: -1;
+}
+
 .container{
     margin: 120px auto;
     max-width: 600px;
@@ -22,6 +35,11 @@ h1 {
     font-size: 36px;
     line-height: 1.5;
     color: rgb(97, 187, 197);
+    padding: 5px 10px;
+    background-color: white;
+    box-shadow: 0px 20px 60px rgba(65, 50, 100, 0.08);
+    border-radius: 15px;
+    margin-bottom: 30px;
 }
 
 .form-container {
