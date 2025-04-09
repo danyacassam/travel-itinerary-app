@@ -1,6 +1,6 @@
 function displayItinerary(response){
-    console.log("Travel itinerary generated");
-    new Typewriter('#poem', {
+    //console.log("Travel itinerary generated");
+    new Typewriter('#travel', {
         strings: response.data.answer,
         autoStart: true,
         delay: 1,
@@ -19,9 +19,9 @@ function generateItenerary(event) {
   let prompt = `User instructions are: Generate a 3-day travel guide for tourists that includes popular attractions and recommended restaurants while visiting ${instructionsInput.value}`;
   let apiURL = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
-  let poemElement = document.querySelector("#poem");
-  poemElement.classList.remove("hidden");
-  poemElement.innerHTML = `<div class="generating">⏳ Generating a travel guide for ${instructionsInput.value}</div>`;
+  let travelElement = document.querySelector("#travel");
+  travelElement.classList.remove("hidden");
+  travelElement.innerHTML = `<div class="generating">⏳ Generating a travel guide for ${instructionsInput.value}</div>`;
 
   axios.get(apiURL).then(displayItinerary);
 
@@ -29,8 +29,8 @@ function generateItenerary(event) {
 
 }
 
-let poemFormElement = document.querySelector("#poem-generator");
-poemFormElement.addEventListener("submit", generateItenerary);
+let travelFormElement = document.querySelector("#travel-generator");
+travelFormElement.addEventListener("submit", generateItenerary);
 
 function capitalizeFirstLetter() {
   const input = document.getElementById('user-instructions');

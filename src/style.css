@@ -3,11 +3,11 @@ body {
     font-family: monospace;
 }
 
-a{
+a {
     color: rgb(16, 112, 112);
 }
 
-.background-image{
+.background-image {
     position: absolute;
     top: 0;
     left: 0;
@@ -20,7 +20,7 @@ a{
     z-index: -1;
 }
 
-.container{
+.container {
     margin: 120px auto;
     max-width: 600px;
 }
@@ -50,7 +50,7 @@ h1 {
     margin-bottom: 30px;
 }
 
-form{
+form {
     display: flex;
 }
 
@@ -61,7 +61,7 @@ form{
     font-size: 12px;
   }
 
-.instructions{
+.instructions {
     padding: 16px;
     border: 1px solid rgba(39, 33, 66, 0.5);
     width: 80%;
@@ -70,7 +70,7 @@ form{
     color: black;
 }
 
-.submit-button{
+.submit-button {
     margin-left: 10px;
     background-color: rgb(16, 112, 112);
     color: white;
@@ -80,7 +80,7 @@ form{
     font-size: 16px;
 }
 
-.poem {
+.travel {
     font-size: 16px;
     background-color: white;
     padding: 20px;
@@ -94,11 +94,11 @@ form{
     display: none;
   }
 
-.poem strong {
+.travel strong {
     color: rgb(16, 112, 112);;
 }
 
-footer{
+footer {
     text-align: center;
     font-size: 14px;
     margin-top: 30px;
